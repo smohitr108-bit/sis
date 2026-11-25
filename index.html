@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090817" />
+  <title>A Gift for My Sister | Shraddha</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="stars" aria-hidden="true"></div>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="The Secret Gift home"><span class="brand-mark">✦</span> A GIFT FOR MY SISTER</a>
+      <span class="top-note">A little sister gift, just for you</span>
+    </header>
+
+    <section id="lockScreen" class="lock-screen glass">
+      <div class="orbit" aria-hidden="true"><span>✧</span><span>✦</span><span>·</span></div>
+      <p class="eyebrow">A LITTLE SISTER SURPRISE</p>
+      <h1>For my sister, <span>Shraddha</span> 💜</h1>
+      <p class="intro">A little website made especially for you, with lots of sisterly love and good wishes.</p>
+      <form id="unlockForm" class="unlock-form">
+        <label for="passcode">Enter your secret code</label>
+        <div class="input-row">
+          <input id="passcode" type="password" placeholder="Your secret code..." autocomplete="off" required />
+          <button type="submit" class="primary-btn">Unlock <span>↗</span></button>
+        </div>
+        <p id="errorMessage" class="error-message" role="status"></p>
+      </form>
+      <p class="tiny-note">Made by Mohit, especially for you.</p>
+    </section>
+
+    <section id="giftContent" class="gift-content hidden">
+      <div class="hero glass">
+        <p class="eyebrow">FOR MY SISTER</p>
+        <h1>A little gift with <span>lots of love</span></h1>
+        <p>No matter how busy life gets, I hope this little page reminds you that you are appreciated and always deserve happiness, peace, and beautiful memories.</p>
+        <div class="hero-actions">
+          <button id="surpriseButton" class="primary-btn">Open a little surprise ✨</button>
+          <button id="relockButton" class="quiet-btn">Lock again</button>
+        </div>
+      </div>
+
+      <div class="content-grid">
+        <article class="glass note-card">
+          <div class="card-icon">💌</div>
+          <p class="eyebrow">A NOTE FOR MY SISTER</p>
+          <h2>Dear Shraddha, my sister,</h2>
+          <div id="letterCopy" class="letter-copy">
+            <p>I made this little page just for you, Shraddha, as a small gift to remind you how special a sister can be. I hope it brings a smile to your day.</p>
+            <p>Keep smiling, keep believing in yourself, and never forget that you deserve kindness and happiness. I hope we make lots of good memories together.</p>
+            <p>Whenever life feels busy, remember to take care of yourself and make time for things that make you happy. Wishing you peaceful days, wonderful memories, and success in everything you do.</p>
+            <p>— Mohit ✦</p>
+          </div>
+          <button id="editLetter" class="text-btn">Personalize this note ↗</button>
+        </article>
+
+        <article class="glass surprise-card">
+          <div class="card-icon">🌙</div>
+          <p class="eyebrow">A RANDOM REMINDER</p>
+          <h2 id="surpriseTitle">A little reminder ✨</h2>
+          <p id="surpriseMessage">You don't need to be perfect to make a difference. Being your own kind of wonderful is more than enough.</p>
+          <div class="mini-stars">✦ · ✧ · ✦</div>
+        </article>
+      </div>
+
+      <footer class="footer">Made by Mohit for his sister Shraddha <span>✦</span></footer>
+    </section>
+  </main>
+
+  <div id="letterModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-panel glass">
+      <button id="closeModal" class="close-btn" aria-label="Close">×</button>
+      <p class="eyebrow">MAKE IT YOUR OWN</p>
+      <h2 id="modalTitle">Edit your note</h2>
+      <textarea id="letterEditor" rows="10" aria-label="Letter text"></textarea>
+      <button id="saveLetter" class="primary-btn">Save note</button>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
